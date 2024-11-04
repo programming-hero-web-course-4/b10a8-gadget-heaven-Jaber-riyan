@@ -2,7 +2,7 @@
   {
     "product_id": 1,
     "product_title": "Apple iPhone 14 Pro",
-    "product_image": "https://example.com/images/iphone14pro.jpg",
+    "product_image": "https://i.ibb.co.com/RphpZHQ/Apple-i-Phone-14-Pro.jpg",
     "category": "phone",
     "price": 999,
     "description": "Apple's latest smartphone with a powerful A16 chip and a ProMotion display.",
@@ -19,8 +19,8 @@
   {
     "product_id": 2,
     "product_title": "Sony WH-1000XM5",
-    "product_image": "https://example.com/images/sony-wh1000xm5.jpg",
-    "category": "soundbox",
+    "product_image": "https://i.ibb.co.com/RhxWZdp/Sony-WH-1000-XM5.jpg",
+    "category": "headphone",
     "price": 399,
     "description": "Industry-leading noise cancelling headphones with excellent sound quality.",
     "Specification": [
@@ -36,7 +36,7 @@
   {
     "product_id": 3,
     "product_title": "Samsung Galaxy Watch 5",
-    "product_image": "https://example.com/images/galaxy-watch5.jpg",
+    "product_image": "https://i.ibb.co.com/g47prm2/Samsung-Galaxy-Watch-5.jpg",
     "category": "watch",
     "price": 279,
     "description": "A versatile smartwatch with advanced health tracking features.",
@@ -53,7 +53,7 @@
   {
     "product_id": 4,
     "product_title": "LG C2 65-inch OLED TV",
-    "product_image": "https://example.com/images/lg-c2-oled.jpg",
+    "product_image": "https://i.ibb.co.com/zPKg7Dp/LG-C2-65-inch-OLED-TV.jpg",
     "category": "tv",
     "price": 1999,
     "description": "High-end 4K OLED TV with stunning picture quality and gaming-friendly features.",
@@ -70,7 +70,7 @@
   {
     "product_id": 5,
     "product_title": "MacBook Pro 14-inch (M2 Pro)",
-    "product_image": "https://example.com/images/macbookpro-m2.jpg",
+    "product_image": "https://i.ibb.co.com/DtMQPXx/Mac-Book-Pro-14-inch-M2-Pro.jpg",
     "category": "laptop",
     "price": 1999,
     "description": "Apple’s premium laptop with the powerful M2 Pro chip and high-res display.",
@@ -87,8 +87,8 @@
   {
     "product_id": 6,
     "product_title": "Bose SoundLink Revolve+ II",
-    "product_image": "https://example.com/images/bose-revolve-plus.jpg",
-    "category": "soundbox",
+    "product_image": "https://i.ibb.co.com/3mn9Rjq/photo-1505740420928-5e560c06d30e-fm-jpg-q-60-w-3000-ixlib-rb-4-0.jpg",
+    "category": "headphone",
     "price": 329,
     "description": "Portable Bluetooth speaker with 360° sound and durable design.",
     "Specification": [
@@ -104,7 +104,7 @@
   {
     "product_id": 7,
     "product_title": "Apple Watch Series 8",
-    "product_image": "https://example.com/images/apple-watch-series8.jpg",
+    "product_image": "https://i.ibb.co.com/HTLNHqf/Apple-Watch-Series-8.jpg",
     "category": "watch",
     "price": 399,
     "description": "Advanced health features and a new temperature sensor in Apple’s flagship watch.",
@@ -121,7 +121,7 @@
   {
     "product_id": 8,
     "product_title": "Dell XPS 13 Plus",
-    "product_image": "https://example.com/images/dell-xps13.jpg",
+    "product_image": "https://i.ibb.co.com/gmC4kRh/Dell-XPS-13-Plus.jpg",
     "category": "laptop",
     "price": 1249,
     "description": "Sleek, compact laptop with a high-quality display and long battery life.",
@@ -138,7 +138,7 @@
   {
     "product_id": 9,
     "product_title": "Samsung Galaxy Z Fold4",
-    "product_image": "https://example.com/images/galaxy-zfold4.jpg",
+    "product_image": "https://i.ibb.co.com/0nWcXxX/06z-GAYOKv-HFzoerdzdp-TDQX-1-fit-scale-size-760x427-v1660661515.jpg",
     "category": "phone",
     "price": 1799,
     "description": "Innovative foldable phone with a large screen and powerful multitasking capabilities.",
@@ -155,7 +155,7 @@
   {
     "product_id": 10,
     "product_title": "Sony BRAVIA XR A95K 55-inch",
-    "product_image": "https://example.com/images/sony-bravia-xr-a95k.jpg",
+    "product_image": "https://i.ibb.co.com/jWQgp2m/images-q-tbn-ANd9-Gc-Qt2-K97zuxunx-FOo-LGZZre-Vs-V0-GBX-O6ob-HQ-s.jpg",
     "category": "tv",
     "price": 2499,
     "description": "Premium 4K OLED TV with cognitive intelligence and vibrant color accuracy.",

@@ -1,14 +1,23 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
+import Product from "./Product";
 
 const AllProducts = () => {
-    const { category_name } = useParams();
     const data = useLoaderData();
     console.log(data);
 
 
     return (
         <div>
-            all data of category {data.length} is
+            {
+                data.length === 0 ? <h1 className="text-3xl text-red-500"> Have no products !!</h1>
+                    : 
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {
+                            data.map(product=><Product product={product} key={product.product_id}></Product>)
+                        }
+                    </div>
+            }
+
         </div>
     );
 };

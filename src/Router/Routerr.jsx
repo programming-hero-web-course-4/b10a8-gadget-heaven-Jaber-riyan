@@ -4,6 +4,7 @@ import Dashboard from "../Pages/Dashboard";
 import Home from "../Pages/Home";
 import Error from "../Error/Error";
 import AllProducts from "../Components/AllProducts";
+import GadgetDetails from "../Pages/GadgetDetails";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
                                     data.filter(item => item.category === params.category_name)
                                 )
                     },
+                    {
+                        path: '/product/:product_id',
+                        element: <GadgetDetails></GadgetDetails>
+                    }
                 ]
             },
             {
