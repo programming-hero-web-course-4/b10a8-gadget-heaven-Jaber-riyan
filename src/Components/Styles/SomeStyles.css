@@ -1,0 +1,8 @@
+.active{
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+.category-active{
+    color: red;
+    text-decoration: underline;
+}

@@ -1,31 +1,33 @@
 import { CiShoppingCart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { MdFavoriteBorder } from "react-icons/md";
+import { Link, NavLink } from "react-router-dom";
+import './Styles/SomeStyles.css'
 
 const Navbar = () => {
 
     const links = (
         <>
             <li
-                className="hover:text-[#4b4bed] font-[700] text-[14px] cursor-pointer">
-                <a>Home</a>
+                className="font-[700] text-[14px] cursor-pointer">
+                <NavLink to='/'>Home</NavLink>
             </li>
             <li
-                className="hover:text-[#4b4bed] font-[700] text-[14px] cursor-pointer">
-                <a>Statistics</a>
+                className="font-[700] text-[14px] cursor-pointer">
+                <NavLink to='/statistics'>Statistics</NavLink>
             </li>
             <li
-                className="hover:text-[#4b4bed] font-[700] text-[14px] cursor-pointer">
-                <a>Dashboard</a>
+                className="font-[700] text-[14px] cursor-pointer">
+                <NavLink to='/dashboard'>Dashboard</NavLink>
             </li>
         </>
     );
 
     return (
         <div>
-            <nav className="navbar text-white mb-12">
+            <nav className="navbar text-white mb-12 relative">
                 <div className="navbar-start">
-                    <a className="font-bold text-xl">Gadget Heaven</a>
+                    <Link className="font-bold text-xl">Gadget Heaven</Link>
                 </div>
                 <div className="md:block hidden">
                     <ul className="menu-horizontal px-1 space-x-7 items-center justify-center text-white">
@@ -53,8 +55,8 @@ const Navbar = () => {
                                 tabIndex="0"
                                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 text-black font-medium">
                                 {links}
-                                <a className=""><CiShoppingCart></CiShoppingCart> </a>
-                                <a className=""><MdFavoriteBorder></MdFavoriteBorder>  </a>
+                                <Link className=""><CiShoppingCart></CiShoppingCart> </Link>
+                                <Link className=""><MdFavoriteBorder></MdFavoriteBorder>  </Link>
                             </ul>
                         </div>
                     </div>

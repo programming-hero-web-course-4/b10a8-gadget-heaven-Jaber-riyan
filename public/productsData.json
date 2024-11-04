@@ -1,0 +1,172 @@
+[
+  {
+    "product_id": 1,
+    "product_title": "Apple iPhone 14 Pro",
+    "product_image": "https://example.com/images/iphone14pro.jpg",
+    "category": "phone",
+    "price": 999,
+    "description": "Apple's latest smartphone with a powerful A16 chip and a ProMotion display.",
+    "Specification": [
+      "6.1-inch Super Retina XDR display",
+      "128GB storage",
+      "48MP main camera",
+      "5G capable",
+      "Face ID"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 2,
+    "product_title": "Sony WH-1000XM5",
+    "product_image": "https://example.com/images/sony-wh1000xm5.jpg",
+    "category": "soundbox",
+    "price": 399,
+    "description": "Industry-leading noise cancelling headphones with excellent sound quality.",
+    "Specification": [
+      "30-hour battery life",
+      "Bluetooth 5.2",
+      "Adaptive noise cancelling",
+      "Hi-Res audio support",
+      "Quick charge"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 3,
+    "product_title": "Samsung Galaxy Watch 5",
+    "product_image": "https://example.com/images/galaxy-watch5.jpg",
+    "category": "watch",
+    "price": 279,
+    "description": "A versatile smartwatch with advanced health tracking features.",
+    "Specification": [
+      "1.4-inch Super AMOLED display",
+      "GPS",
+      "Heart rate & ECG monitor",
+      "Sleep tracking",
+      "50m water resistance"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 4,
+    "product_title": "LG C2 65-inch OLED TV",
+    "product_image": "https://example.com/images/lg-c2-oled.jpg",
+    "category": "tv",
+    "price": 1999,
+    "description": "High-end 4K OLED TV with stunning picture quality and gaming-friendly features.",
+    "Specification": [
+      "65-inch 4K OLED display",
+      "120Hz refresh rate",
+      "HDR10, Dolby Vision, HLG",
+      "HDMI 2.1",
+      "webOS smart platform"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 5,
+    "product_title": "MacBook Pro 14-inch (M2 Pro)",
+    "product_image": "https://example.com/images/macbookpro-m2.jpg",
+    "category": "laptop",
+    "price": 1999,
+    "description": "Apple’s premium laptop with the powerful M2 Pro chip and high-res display.",
+    "Specification": [
+      "14.2-inch Liquid Retina XDR display",
+      "M2 Pro chip",
+      "16GB RAM",
+      "512GB SSD",
+      "macOS Ventura"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 6,
+    "product_title": "Bose SoundLink Revolve+ II",
+    "product_image": "https://example.com/images/bose-revolve-plus.jpg",
+    "category": "soundbox",
+    "price": 329,
+    "description": "Portable Bluetooth speaker with 360° sound and durable design.",
+    "Specification": [
+      "360-degree sound",
+      "17-hour battery life",
+      "Water-resistant (IP55)",
+      "Voice assistant support",
+      "Bluetooth 5.0"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 7,
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://example.com/images/apple-watch-series8.jpg",
+    "category": "watch",
+    "price": 399,
+    "description": "Advanced health features and a new temperature sensor in Apple’s flagship watch.",
+    "Specification": [
+      "Always-on Retina display",
+      "ECG and blood oxygen monitoring",
+      "Crash detection",
+      "Water-resistant to 50 meters",
+      "GPS"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": 8,
+    "product_title": "Dell XPS 13 Plus",
+    "product_image": "https://example.com/images/dell-xps13.jpg",
+    "category": "laptop",
+    "price": 1249,
+    "description": "Sleek, compact laptop with a high-quality display and long battery life.",
+    "Specification": [
+      "13.4-inch FHD+ display",
+      "Intel Core i7",
+      "16GB RAM",
+      "512GB SSD",
+      "Windows 11"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 9,
+    "product_title": "Samsung Galaxy Z Fold4",
+    "product_image": "https://example.com/images/galaxy-zfold4.jpg",
+    "category": "phone",
+    "price": 1799,
+    "description": "Innovative foldable phone with a large screen and powerful multitasking capabilities.",
+    "Specification": [
+      "7.6-inch QXGA+ AMOLED main display",
+      "12GB RAM",
+      "256GB storage",
+      "50MP main camera",
+      "5G capable"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": 10,
+    "product_title": "Sony BRAVIA XR A95K 55-inch",
+    "product_image": "https://example.com/images/sony-bravia-xr-a95k.jpg",
+    "category": "tv",
+    "price": 2499,
+    "description": "Premium 4K OLED TV with cognitive intelligence and vibrant color accuracy.",
+    "Specification": [
+      "55-inch 4K OLED display",
+      "XR Triluminos Pro",
+      "Dolby Vision & Atmos",
+      "HDMI 2.1",
+      "Google TV"
+    ],
+    "availability": false,
+    "rating": 4.9
+  }
+]

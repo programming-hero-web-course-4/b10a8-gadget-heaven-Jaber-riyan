@@ -1,6 +1,4 @@
-/* eslint-disable no-unused-vars */
-// eslint-disable-next-line no-unused-vars
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+ import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const Dashboard = () => {
     return (
