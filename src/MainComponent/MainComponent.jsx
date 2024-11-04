@@ -1,11 +1,18 @@
+import { Outlet } from "react-router-dom";
+import Navbar from "../Components/Navbar";
+
 const MainComponent = () => {
     return (
-        <div>
-            {/* Navbar section */}
-            {/* Banner Section */}
-            {/* Outlet */}
-            {/* Footer */}
-            <h1 className=''>Hey</h1>
+        <div className="container mx-auto bg-[#9538E2] rounded-3xl my-5">
+            <div className="md:w-[80%] mx-auto">
+                {/* Navbar section */}
+                <Navbar></Navbar>
+                {/* Banner Section */}
+                
+                {/* Outlet */}
+                <Outlet></Outlet>
+                {/* Footer */}
+            </div>
         </div>
     );
 };
