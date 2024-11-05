@@ -5,16 +5,19 @@ import Home from "../Pages/Home";
 import Error from "../Error/Error";
 import AllProducts from "../Components/AllProducts";
 import GadgetDetails from "../Pages/GadgetDetails";
+import Cart from "../Components/Cart";
+import Wishlist from "../Components/Wishlist";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <MainComponent></MainComponent>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',
                 element: <Home></Home>,
-                loader:()=> fetch('/categories.json'),
+                loader: () => fetch('/categories.json'),
                 children: [
                     {
                         path: '/',
@@ -31,22 +34,31 @@ const router = createBrowserRouter([
                                     data.filter(item => item.category === params.category_name)
                                 )
                     },
-                    {
-                        path: '/product/:product_id',
-                        element: <GadgetDetails></GadgetDetails>
-                    }
                 ]
             },
+        ]
+    },
+    {
+        path: '/dashboard',
+        element: <Dashboard></Dashboard>,
+        children: [
             {
-                path: '/dashboard',
-                element: <Dashboard></Dashboard>
+                path: 'cart',
+                element: <Cart></Cart>,
+                loader: () => fetch('/productsData.json'),
             },
             {
-                path: '*',
-                element: <Error></Error>
+                path: 'wishlist',
+                element: <Wishlist></Wishlist>,
+                loader: () => fetch('/productsData.json')
             }
         ]
     },
+    {
+        path: '/product/:product_id',
+        element: <GadgetDetails></GadgetDetails>,
+        loader: () => fetch('/productsData.json')
+    }
 ])
 
 export default router;

@@ -20,6 +20,10 @@ const Navbar = () => {
                 className="font-[700] text-[14px] cursor-pointer">
                 <NavLink to='/dashboard'>Dashboard</NavLink>
             </li>
+            <li
+                className="font-[700] text-[14px] cursor-pointer">
+                <NavLink to='/about_us'>About_Us</NavLink>
+            </li>
         </>
     );
 
@@ -55,14 +59,14 @@ const Navbar = () => {
                                 tabIndex="0"
                                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0 text-black font-medium">
                                 {links}
-                                <Link className=""><CiShoppingCart></CiShoppingCart> </Link>
-                                <Link className=""><MdFavoriteBorder></MdFavoriteBorder>  </Link>
+                                <Link className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-white text-[#3A3A3A]"><IoCartOutline ></IoCartOutline></Link>
+                                <Link className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-black text-white"><MdFavoriteBorder></MdFavoriteBorder>  </Link>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <a className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-white text-[#3A3A3A]"><IoCartOutline ></IoCartOutline> </a>
-                <a className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-white text-black"><MdFavoriteBorder></MdFavoriteBorder>  </a>
+                <Link className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-white text-[#3A3A3A] relative"><IoCartOutline ></IoCartOutline><span className="p-2 rounded-full absolute bg-red-300 -top-7 left-5">{localStorage.getItem('cart').length}</span></Link>
+                <Link className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-white text-black relative"><MdFavoriteBorder></MdFavoriteBorder> <span className="p-2 rounded-full absolute bg-red-300 -top-7 left-5">{localStorage.getItem('wishlist').length}</span> </Link>
 
             </nav>
         </div >
