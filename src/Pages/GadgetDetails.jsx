@@ -68,7 +68,7 @@ const GadgetDetails = () => {
         </>
     );
 
-    
+
     return (
         <div className='bg-[#efefef]'>
             <HelmetProvider>
@@ -138,7 +138,7 @@ const GadgetDetails = () => {
                         <div>
                             <div>
                                 <h1 className="font-semibold text-3xl text-[#09080F] mb-3">Samsung Galaxy S23 Ultra</h1>
-                                <p className="font-semibold text-[#09080FCC] text-xl mb-4">Price: {detailData[0]?.price}</p>
+                                <p className="font-semibold text-[#09080FCC] text-xl mb-4">Price: ${detailData[0]?.price}</p>
                             </div>
                             <button className={
                                 detailData[0]?.availability ?

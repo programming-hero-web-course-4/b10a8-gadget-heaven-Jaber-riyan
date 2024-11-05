@@ -54,7 +54,7 @@ const Statistics = () => {
         <div>
             <HelmetProvider>
                 <Helmet>
-                    <title>About Us || GadgetHeaven ✨</title>
+                    <title>Statistics || GadgetHeaven ✨</title>
                 </Helmet>
             </HelmetProvider>
             {/* navbar start  */}
