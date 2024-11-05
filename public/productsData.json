@@ -98,7 +98,7 @@
       "Voice assistant support",
       "Bluetooth 5.0"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.6
   },
   {
@@ -132,7 +132,7 @@
       "512GB SSD",
       "Windows 11"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.5
   },
   {

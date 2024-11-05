@@ -10,11 +10,6 @@ const MainComponent = () => {
     const location = useLocation();
     return (
         <div className="bg-[#09080F1A] pt-3">
-            {/* <HelmetProvider>
-                <Helmet>
-                    <link rel="canonical" href="http://localhost:5173/" />
-                </Helmet>
-            </HelmetProvider> */}
             <div className="container mx-auto bg-[#9538E2] rounded-3xl my-5">
                 <div className="md:w-[80%] mx-auto">
                     {/* Navbar section */}
