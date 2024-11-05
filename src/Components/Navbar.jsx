@@ -1,4 +1,3 @@
-import { CiShoppingCart } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { MdFavoriteBorder } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
@@ -65,9 +64,10 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-                <Link className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-white text-[#3A3A3A] relative"><IoCartOutline ></IoCartOutline><span className="p-2 rounded-full absolute bg-red-300 -top-7 left-5">{localStorage.getItem('cart').length}</span></Link>
-                <Link className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-white text-black relative"><MdFavoriteBorder></MdFavoriteBorder> <span className="p-2 rounded-full absolute bg-red-300 -top-7 left-5">{localStorage.getItem('wishlist').length}</span> </Link>
-
+                <Link className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-white text-[#3A3A3A] relative"><IoCartOutline ></IoCartOutline><span className="p-2 rounded-full absolute bg-red-300 -top-7 left-5"></span></Link>
+                <Link className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-white text-black relative"><MdFavoriteBorder></MdFavoriteBorder> <span className="p-2 rounded-full absolute bg-red-300 -top-7 left-5">
+                    {localStorage.getItem('wishlist').length}
+                </span> </Link>
             </nav>
         </div >
     );

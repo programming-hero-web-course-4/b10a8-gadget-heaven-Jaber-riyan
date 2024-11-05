@@ -9,13 +9,15 @@ const AllProducts = () => {
     return (
         <div>
             {
-                data.length === 0 ? <h1 className="text-3xl text-red-500"> Have no products !!</h1>
-                    : 
+                data.length > 0 ?
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {
-                            data.map(product=><Product product={product} key={product.product_id}></Product>)
+                            data && data.map(product => <Product product={product} key={product.product_id}></Product>)
                         }
                     </div>
+                    :
+                    <h1 className="text-3xl text-red-500"> Have no products !!</h1>
+
             }
 
         </div>

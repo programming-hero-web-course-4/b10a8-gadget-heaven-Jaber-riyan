@@ -77,16 +77,18 @@ const Cart = () => {
                         <span>Sort By Price</span>
                     </button>
                     <button onClick={handlePurchase} className="py-4 px-7 rounded-full font-semibold text-[#fff] border-2 border-[#9538E2] bg-[#9538E2] flex items-center justify-center gap-2">
-                        Purchase ({cartProducts.length})
+                        Purchase ({cartProducts?.length})
                     </button>
                 </div>
             </div>
             {
-                cartProducts.length === 0 ? <h2 className="text-xl font-bold text-red-500 text-center">No Product in the Cart List :(</h2>
-                    :
-                    cartProducts.map((product, i) => (
+                cartProducts.length > 0 ?
+                    cartProducts && cartProducts.map((product, i) => (
                         <DashProductCard product={product} handleDelete={handleDelete} key={i} />
-                    ))
+                    )) :
+                    <h2 className="text-xl font-bold text-red-500 text-center">No Product in the Cart List :(</h2>
+
+
             }
             <div className="pb-10"></div>
 

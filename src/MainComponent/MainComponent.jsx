@@ -13,7 +13,9 @@ const MainComponent = () => {
             <div className="container mx-auto bg-[#9538E2] rounded-3xl my-5">
                 <div className="md:w-[80%] mx-auto">
                     {/* Navbar section */}
-                    <Navbar></Navbar>
+                    {/* <div className="fixed top-0 z-10 bg-[#9538E2]"> */}
+                        <Navbar></Navbar>
+                    {/* </div> */}
                     {/* Banner Section */}
                     <div className="mb-96">
                         <Banner></Banner>

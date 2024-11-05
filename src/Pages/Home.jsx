@@ -35,7 +35,7 @@ const Home = () => {
                                 isActive ? 'bg-[#9538E2] text-white font-extrabold py-3 px-7 rounded-3xl' : "bg-[#09080F0D] py-3 px-7 text-[#09080F99] font-normal rounded-3xl"
                             }>ALL PRODUCTS</NavLink>
                             {
-                                categories.map(category => <NavLink key={category.category_id} to={`/category/${category.category_name}`} className={({ isActive }) =>
+                                categories && categories.map(category => <NavLink key={category.category_id} to={`/category/${category.category_name}`} className={({ isActive }) =>
                                     isActive ? 'bg-[#9538E2] text-white font-extrabold py-3 px-7 rounded-3xl' : "bg-[#09080F0D] py-3 px-7 text-[#09080F99] font-normal rounded-3xl"
                                 }>{category.category_name.toUpperCase()}</NavLink>)
                             }
