@@ -2,8 +2,30 @@ import { IoCartOutline } from "react-icons/io5";
 import { MdFavoriteBorder } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 import './Styles/SomeStyles.css'
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
+    const [totalCartList, setTotalCartList] = useState(0);
+    const [totalWishList, setTotalWishList] = useState(0);
+
+    useEffect(() => {
+        const cart = JSON.parse(localStorage.getItem('cart'));
+        const wish = JSON.parse(localStorage.getItem('wishlist'));
+
+        // setTotalCartList(cart.length);
+        // setTotalWishList(wish.length);
+        if (cart && Array.isArray(cart)) {
+            setTotalCartList(cart.length);
+        }
+        if (wish && Array.isArray(wish)) {
+            setTotalWishList(wish.length)
+        }
+        else {
+            setTotalCartList(0);  // Default to 0 if cart is null or not an array
+        }
+    }, []);
+
+
 
     const links = (
         <>
@@ -64,9 +86,9 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-                <Link className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-white text-[#3A3A3A] relative"><IoCartOutline ></IoCartOutline><span className="p-2 rounded-full absolute bg-red-300 -top-7 left-5"></span></Link>
-                <Link className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-white text-black relative"><MdFavoriteBorder></MdFavoriteBorder> <span className="p-2 rounded-full absolute bg-red-300 -top-7 left-5">
-                    {localStorage.getItem('wishlist').length}
+                <Link to={'/dashboard/cart'} className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-white text-[#3A3A3A] relative"><IoCartOutline ></IoCartOutline><span className="p-2 rounded-full absolute bg-red-300 -top-7 left-5">{totalCartList}</span></Link>
+                <Link to={'/dashboard/wishlist'} className="md:block hidden p-3 text-xl font-bold mr-3 rounded-full bg-white text-black relative"><MdFavoriteBorder></MdFavoriteBorder> <span className="p-2 rounded-full absolute bg-red-300 -top-7 left-5">
+                    {totalWishList}
                 </span> </Link>
             </nav>
         </div >

@@ -10,12 +10,12 @@ const MainComponent = () => {
     const location = useLocation();
     return (
         <div className="bg-[#09080F1A] pt-3">
-            <div className="container mx-auto bg-[#9538E2] rounded-3xl my-5">
-                <div className="md:w-[80%] mx-auto">
+            <div className="fixed top-0 z-10 bg-[#9538E2] w-[95%] mt-3 ml-9 rounded-3xl">
+                <Navbar></Navbar>
+            </div>
+            <div className="container mx-auto bg-[#9538E2] rounded-b-3xl my-5">
+                <div className="md:w-[80%] mx-auto mt-[112px]">
                     {/* Navbar section */}
-                    {/* <div className="fixed top-0 z-10 bg-[#9538E2]"> */}
-                        <Navbar></Navbar>
-                    {/* </div> */}
                     {/* Banner Section */}
                     <div className="mb-96">
                         <Banner></Banner>

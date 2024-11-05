@@ -1,12 +1,13 @@
+import React, { useEffect, useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
-import { Link, NavLink, Outlet } from 'react-router-dom';
 import { CiShoppingCart } from 'react-icons/ci';
-import { MdFavoriteBorder } from 'react-icons/md';
 import { IoCartOutline } from 'react-icons/io5';
+import { MdFavoriteBorder } from 'react-icons/md';
+import { Link, NavLink } from 'react-router-dom';
 import Footer from '../Components/Footer';
-import { useEffect, useState } from 'react';
 
-const Dashboard = () => {
+const AboutUs = () => {
+
     const [totalCartList, setTotalCartList] = useState(0);
     const [totalWishList, setTotalWishList] = useState(0);
 
@@ -48,11 +49,12 @@ const Dashboard = () => {
         </>
     );
 
+
     return (
-        <div className='bg-[#efefef]'>
+        <div>
             <HelmetProvider>
                 <Helmet>
-                    <title>Dashboard || GadgetHeaven ✨</title>
+                    <title>About Us || GadgetHeaven ✨</title>
                 </Helmet>
             </HelmetProvider>
             {/* navbar start  */}
@@ -105,47 +107,15 @@ const Dashboard = () => {
             {/* banner start  */}
             <div className="bg-[#9538E2] mt-16">
                 <div className="mb-8 pt-5">
-                    <h1 className="font-bold text-3xl text-white text-center mb-6">Dashboard</h1>
+                    <h1 className="font-bold text-3xl text-white text-center mb-6">About Us</h1>
                     <p className="text-[1rem] text-center font-normal text-white w-[70%] mx-auto">Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!</p>
-                </div>
-                <div className="text-center pb-10">
-                    <NavLink to='cart'
-                        className={({ isActive }) =>
-                            isActive ?
-                                `py-4 px-7 bg-white rounded-full font-semibold text-[#9538E2] mr-3`
-
-                                :
-
-                                `py-4 px-7 bg-transparent border-2 rounded-full font-semibold text-[#ffff] mr-3`
-                        }
-                    >Cart</NavLink>
-                    <NavLink to='wishlist'
-                        className={({ isActive }) =>
-                            isActive ?
-                                `py-4 px-7 bg-white rounded-full font-semibold text-[#9538E2] mr-3`
-
-                                :
-
-                                `py-4 px-7 bg-transparent border-2 rounded-full font-semibold text-[#ffff] mr-3`
-                        }
-                    >Wishlist</NavLink>
                 </div>
             </div>
             {/* banner end  */}
-
-            {/* outlet start  */}
-            <div className='md:w-[80%] container mx-auto mt-12'>
-                <Outlet></Outlet>
-            </div>
-            {/* outlet start  */}
-
-            {/* footer start  */}
+            <h3 className='text-red-500 text-4xl font-bold text-center mt-[83px] mb-[82px]'>About Us</h3>
             <Footer></Footer>
-            {/* footer start  */}
         </div>
     );
 };
 
-
-
-export default Dashboard;
+export default AboutUs;
