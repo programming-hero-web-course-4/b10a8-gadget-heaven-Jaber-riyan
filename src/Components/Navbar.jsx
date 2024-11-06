@@ -21,7 +21,7 @@ const Navbar = () => {
             setTotalWishList(wish.length)
         }
         else {
-            setTotalCartList(0);  // Default to 0 if cart is null or not an array
+            setTotalCartList(0);
         }
     }, []);
 

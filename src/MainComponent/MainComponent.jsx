@@ -10,7 +10,7 @@ const MainComponent = () => {
     const location = useLocation();
     return (
         <div className="bg-[#09080F1A] pt-3">
-            <div className="fixed top-0 z-10 bg-[#9538E2] w-[95%] mt-3 ml-9 rounded-3xl">
+            <div className="fixed top-0 z-10 bg-[#9538E2] w-[95%] mt-3 ml-9 rounded-3xl opacity-90">
                 <Navbar></Navbar>
             </div>
             <div className="container mx-auto bg-[#9538E2] rounded-b-3xl my-5">
