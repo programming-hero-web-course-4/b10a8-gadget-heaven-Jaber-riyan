@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { CiShoppingCart } from 'react-icons/ci';
-import { IoCartOutline } from 'react-icons/io5';
+import { IoCartOutline, IoLogoFacebook } from 'react-icons/io5';
 import { MdFavoriteBorder } from 'react-icons/md';
 import { Link, NavLink } from 'react-router-dom';
 import Footer from '../Components/Footer';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const AboutUs = () => {
 
@@ -144,6 +145,20 @@ const AboutUs = () => {
                                     Thank you for visiting my page, and feel free to reach out if you’d like to connect!</span>
                             </p>
                         </div>
+
+                    </div>
+                    <div className="divider"></div>
+                    <div className="flex justify-center items-center gap-4">
+                        <div className="text-xl text-white font-bold">Do Follow: </div>
+                        <Link className='text-white' to={'https://www.facebook.com/profile.php?id=100072216951370'}>
+                            <IoLogoFacebook size={40} />
+                        </Link>
+                        <Link className='text-white' to={'https://github.com/Jaber-riyan'}>
+                            <FaGithub size={38} />
+                        </Link>
+                        <Link className='text-white' to={'https://www.linkedin.com/in/jaber-riyan/'}>
+                            <FaLinkedin size={38} />
+                        </Link>
                     </div>
                 </div>
                 <div className="divider"></div>

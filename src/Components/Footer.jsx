@@ -1,5 +1,9 @@
 /* eslint-disable no-unused-vars */
 
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoLogoFacebook } from "react-icons/io5";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
     return (
         <div className="bg-[#fff] py-24 px-40">
@@ -30,6 +34,19 @@ const Footer = () => {
                     <a className="link link-hover font-normal text-[1rem] text-[#09080F99]">Cookie policy</a>
                 </nav>
             </footer>
+            <div className="divider"></div>
+            <div className="flex justify-center items-center gap-4">
+                <div className="text-xl font-bold">Do Follow: </div>
+                <Link to={'https://www.facebook.com/profile.php?id=100072216951370'}>
+                    <IoLogoFacebook size={40} />
+                </Link>
+                <Link to={'https://github.com/Jaber-riyan'}>
+                    <FaGithub size={38} />
+                </Link>
+                <Link to={'https://www.linkedin.com/in/jaber-riyan/'}>
+                    <FaLinkedin size={38} />
+                </Link>
+            </div>
         </div>
     );
 };
