@@ -6,6 +6,15 @@
 # Short Description
 Gadget Heaven is your one-stop online shop for the latest tech products. Discover, save to your wishlist, and purchase cutting-edge gadgets effortlessly. With a focus on quality and convenience, Gadget Heaven makes upgrading your tech simple and enjoyable!
 
+# Live Link Of This Project
+
+## [https://gadget-heavenn.netlify.app/](https://gadget-heavenn.netlify.app/)
+
+# Requirements PDF Link: 
+
+## [https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-Jaber-riyan/blob/main/Batch-10_Assignment-08.pdf](https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-Jaber-riyan/blob/main/Batch-10_Assignment-08.pdf)
+
+
 # Key Features
 1. **Add To Cart:** Users can easily add products to their cart with a single click.
 2. **Add To Wishlist:** Users can save their favorite products to a wishlist.
@@ -13,6 +22,7 @@ Gadget Heaven is your one-stop online shop for the latest tech products. Discove
 4. **Sort by Price (DESCENDING) of Their Cart List:** Users can sort products in their cart by price, from highest to lowest.
 5. **Purchase Product From Cart List:** Users can complete their purchases from the cart and will be redirected to the homepage upon completion.
 
+# Handle and Managing Data : Local Storage
 
 # Technologies Used : 
 
@@ -24,6 +34,4 @@ Gadget Heaven is your one-stop online shop for the latest tech products. Discove
 ## 6. React Helmet
 
 
-# Live Link Of This Project
 
-## [https://gadget-heavenn.netlify.app/](https://gadget-heavenn.netlify.app/)
