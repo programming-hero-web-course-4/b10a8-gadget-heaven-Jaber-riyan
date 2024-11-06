@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import { CiShoppingCart } from 'react-icons/ci';
 import { IoCartOutline, IoLogoFacebook } from 'react-icons/io5';
